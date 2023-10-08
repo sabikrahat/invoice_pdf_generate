@@ -3,20 +3,17 @@ import 'file_handle_api.dart';
 import 'pdf_invoice_api.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Invoice PDF Generate',
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-      ),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
